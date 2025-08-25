@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Isadora Hummel</title>
+  <style>
+    :root {      
+      --blue-tech: #3a3b86;  /
+      --green-tech: #35892a; 
+      --gray-light: #35892a; 
+      --gray-dark: #343A40;  
+      --white: #35892a;      
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family: 'Segoe UI', Roboto, Montserrat, sans-serif;
+    }
+
+    body {
+      min-height: 100vh;
+      background: linear-gradient(135deg, var(--blue-tech), var(--gray-light));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gray-dark);
+      padding: 1rem;
+    }
+
+    .card {
+      background: rgb(207, 207, 207);
+      backdrop-filter: blur(10px);
+      border-radius: 20px;
+      padding: 2.5rem;
+      max-width: 650px;
+      width: 100%;
+      text-align: center;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.25);
+      animation: fadeIn 1.2s ease-in-out;
+      
+    }
+
+    /* Área das logos */
+    .logos {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 1.5rem;
+      gap: 1.5rem;
+    }
+
+    .card img {
+      max-height: 70px;
+      border-radius: 8px;
+      object-fit: contain;
+      transition: transform 0.3s;
+    }
+
+    .card img:hover {
+      transform: scale(1.05);
+    }
+
+    .icon {
+      font-size: 2.5rem;
+      color: var(--green-tech);
+    }
+
+    .card h1 {
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+      color: var(--green-tech);
+      animation: slideIn 0.6s ease forwards;
+    }
+
+    .card p {
+      font-size: 1.1rem;
+      line-height: 1.6;
+      color: var(--gray-dark);
+      animation: slideIn 0.6s ease forwards;
+      animation-delay: 0.2s;
+    }
+
+    .highlight {
+      color: var(--blue-tech);
+      font-weight: bold;
+    }
+
+    /* Animações */
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    @keyframes slideIn {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+  <!-- Ícones do Font Awesome -->
+  <script src="https://kit.fontawesome.com/a2e0e6ad05.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  <div class="card">
+    <div class="logos">
+      <!-- Logo Isadora (substitua pelo arquivo local) -->
+      <img src="logo-isadora.png" alt="Logo Isadora Hummel">
+      <!-- Ícone de parceria -->
+      <i class="fas fa-handshake icon"></i>
+      <!-- Logo Tectop (substitua pelo arquivo local) -->
+      <img src="logo-tectop.png" alt="Logo Tectop">
+    </div>
+
+    <h1>Gratidão e Novos Caminhos</h1>
+    <p>
+      Hoje, encerramos um ciclo muito especial entre <span class="highlight">Isadora Hummel</span> e a <span class="highlight">TecTop</span>, que marcou nossa história no RH com dedicação e humanidade.<br><br>
+      Agradecemos por toda a parceria construída e desejamos muito sucesso nos próximos capítulos de sua trajetória. 🚀
+    </p>
+  </div>
+</body>
+</html>
